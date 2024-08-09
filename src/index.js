@@ -5,7 +5,6 @@ module.exports = function reverse (number) {
 
     for (let i = 0; i < numberLength; i++) {
         reversed = reversed * 10 + (Math.floor(Math.abs(number) / Math.pow(10, i))) % 10;
-        console.log(i, Math.floor(Math.abs(number) / Math.pow(10, i)) % 10);
     }
 
     return reversed;
